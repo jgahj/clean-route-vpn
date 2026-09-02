@@ -81,6 +81,21 @@ Secure MCP Tunnel 不需要开放电脑的入站端口。电脑上的 `tunnel-cl
 
 如果手机端不是支持 Secure MCP Tunnel 的 OpenAI surface，需要使用 Cloudflare Tunnel、Tailscale Funnel、ngrok 或自建 HTTPS 反向代理，把 `https://你的域名/mcp` 转发到 `http://127.0.0.1:8787/mcp`。此时必须设置 `CODEX_BRIDGE_TOKEN`，并在手机 Agent 中同时配置该 Bearer token；不要把未加密的 HTTP 端口直接暴露到公网。
 
+用于临时测试的 Cloudflare Quick Tunnel 不需要 Cloudflare 账号：
+
+```powershell
+$env:CODEX_BRIDGE_TOKEN = (Get-Content -Raw "$env:LOCALAPPDATA\codex-mobile-bridge\bridge-token.txt").Trim()
+npm start -- --host 127.0.0.1 --port 8787
+```
+
+另开终端运行：
+
+```powershell
+cloudflared tunnel --no-autoupdate --protocol http2 --edge-ip-version 4 --url http://127.0.0.1:8787
+```
+
+终端输出的 `https://*.trycloudflare.com` 加上 `/mcp` 就是手机 Agent 地址；同时配置上面的 bridge token。Quick Tunnel 是临时测试通道，没有稳定性保证，正式使用应改为 Cloudflare 命名隧道或 Secure MCP Tunnel。
+
 ## 本机快速检查
 
 启动后可以用下面的请求确认 MCP 握手和工具列表：
