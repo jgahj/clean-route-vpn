@@ -63,7 +63,7 @@ Secure MCP Tunnel 不需要开放电脑的入站端口。电脑上的 `tunnel-cl
    ```powershell
    $env:CONTROL_PLANE_API_KEY = "sk-..."
    tunnel-client init `
-     --sample sample_mcp_stdio_local `
+     --sample sample_mcp_remote_no_auth `
      --profile codex-bridge `
      --tunnel-id tunnel_... `
      --mcp-server-url http://127.0.0.1:8787/mcp
