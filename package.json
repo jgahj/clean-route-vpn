@@ -1,0 +1,14 @@
+{
+  "name": "codex-mobile-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Expose local Codex projects and conversations through an authenticated MCP gateway.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node bin/codex-mobile-bridge.js",
+    "test": "node --test test"
+  }
+}
