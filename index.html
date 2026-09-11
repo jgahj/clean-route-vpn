@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b131b" />
+    <meta
+      name="description"
+      content="清线 VPN：干净、透明、上手快的线路选择，适合日常模型对话、代码助手与资料检索。"
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23c6f66d'/%3E%3Cpath d='M7 22.4 12.5 8l4.4 9.4L21 8l4 14.4M6.5 23.2h19' fill='none' stroke='%230b131b' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.7'/%3E%3C/svg%3E" />
+    <title>清线 Clean Route | 让模型，直接跑起来</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="清线 Clean Route 首页">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="img">
+              <path d="M7 22.4 12.5 8l4.4 9.4L21 8l4 14.4" />
+              <path class="brand-dot" d="M6.5 23.2h19" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>清线</strong>
+            <small>CLEAN ROUTE</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="主导航">
+          <a href="#experience">体验</a>
+          <a href="#models">模型场景</a>
+          <a href="#plans">套餐</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <a
+          class="button button-small button-dark"
+          href="https://xn--9kqs1lo79d.com/#/register?code=re7tYxnS"
+          target="_blank"
+          rel="sponsored noopener noreferrer"
+        >
+          查看套餐
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" /></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>模型访问体验优先</p>
+          <h1 id="hero-title">让模型，<em>直接跑起来。</em></h1>
+          <p class="hero-lead">
+            一条干净、透明、上手快的网络线路，给日常模型对话、代码助手和资料检索留出更顺的空间。
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://xn--9kqs1lo79d.com/#/register?code=re7tYxnS"
+              target="_blank"
+              rel="sponsored noopener noreferrer"
+            >
+              去看当前套餐
+              <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3.5 9h10M9.5 4.5 14 9l-4.5 4.5" /></svg>
+            </a>
+            <button class="button button-quiet copy-link" type="button" data-copy="https://xn--9kqs1lo79d.com/#/register?code=re7tYxnS">
+              复制邀请链接
+              <svg viewBox="0 0 18 18" aria-hidden="true"><rect x="6.5" y="5.5" width="7" height="9" rx="1" /><path d="M11 5V3.8a1 1 0 0 0-1-1H4.7a1 1 0 0 0-1 1v7.5a1 1 0 0 0 1 1h1.8" /></svg>
+            </button>
+          </div>
+          <p class="disclosure">推广说明：通过此链接注册可能产生佣金，价格以注册页实时显示为准。</p>
+        </div>
+
+        <div class="hero-visual" aria-label="线路状态预览">
+          <div class="visual-glow" aria-hidden="true"></div>
+          <div class="route-console">
+            <div class="console-head">
+              <div class="console-title"><span class="status-dot"></span>ROUTE / ACTIVE</div>
+              <div class="console-meta">LIVE CHECK <span>09:41:12</span></div>
+            </div>
+            <div class="network-map" aria-hidden="true">
+              <div class="map-grid"></div>
+              <svg class="map-lines" viewBox="0 0 540 300" preserveAspectRatio="none">
+                <path class="route route-a" d="M82 190 C155 133, 197 119, 267 146 S365 185, 445 103" />
+                <path class="route route-b" d="M89 99 C157 124, 188 203, 265 180 S361 130, 455 214" />
+                <path class="route route-c" d="M105 245 C164 210, 207 230, 269 209 S355 82, 448 68" />
+              </svg>
+              <div class="map-node node-shanghai"><span></span><strong>上海</strong></div>
+              <div class="map-node node-tokyo"><span></span><strong>东京</strong></div>
+              <div class="map-node node-sg"><span></span><strong>新加坡</strong></div>
+              <div class="map-node node-la"><span></span><strong>洛杉矶</strong></div>
+              <div class="map-node node-eu"><span></span><strong>法兰克福</strong></div>
+              <div class="map-center-label"><span>MODEL<br />ROUTE</span></div>
+            </div>
+            <div class="console-stats">
+              <div><span>当前路径</span><strong>上海 <i>↔</i> 东京</strong></div>
+              <div><span>响应参考</span><strong>86 <small>ms</small></strong></div>
+              <div><span>模型访问</span><strong class="ready">READY</strong></div>
+            </div>
+          </div>
+          <div class="visual-caption"><span>每次连接前先看路线</span><span class="caption-arrow">↗</span></div>
+        </div>
+      </section>
+
+      <section class="experience shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-intro">
+          <p class="section-index">01 / EXPERIENCE</p>
+          <h2 id="experience-title">便宜不是唯一标准，<br /><span>用起来顺</span>才是。</h2>
+          <p>
+            把复杂的线路选择交给清晰的状态信息。你只需要关心：现在是否适合打开模型，下一次是否还愿意继续用。
+          </p>
+        </div>
+        <div class="signal-list">
+          <article class="signal-row">
+            <div class="signal-number">01</div>
+            <div class="signal-icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28"><path d="M5 19.5 11 8l4.7 8.2L21 7l2 12.5" /><path d="M5 22h18" /></svg>
+            </div>
+            <div class="signal-body"><h3>节点信息说人话</h3><p>看得到线路、延迟和更新时间，不用猜哪个按钮才是正确答案。</p></div>
+            <span class="signal-tag">透明</span>
+          </article>
+          <article class="signal-row">
+            <div class="signal-number">02</div>
+            <div class="signal-icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28"><path d="M14 4.5 22 8v5.9c0 5.2-3.3 8.6-8 10.1-4.7-1.5-8-4.9-8-10.1V8l8-3.5Z" /><path d="m10.3 14 2.4 2.4 5.1-5.1" /></svg>
+            </div>
+            <div class="signal-body"><h3>干净，少一点打扰</h3><p>面向日常工作流的线路选择，减少反复验证和无意义的切换。</p></div>
+            <span class="signal-tag">克制</span>
+          </article>
+          <article class="signal-row">
+            <div class="signal-number">03</div>
+            <div class="signal-icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28"><circle cx="14" cy="14" r="9" /><path d="M14 9v5l3.4 2" /></svg>
+            </div>
+            <div class="signal-body"><h3>打开就能开始</h3><p>注册、复制配置、连接，步骤短到可以在下一次模型提问前完成。</p></div>
+            <span class="signal-tag">省心</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="models" id="models" aria-labelledby="models-title">
+        <div class="shell models-inner">
+          <div class="models-heading">
+            <div>
+              <p class="section-index">02 / MODEL WORKFLOWS</p>
+              <h2 id="models-title">不同模型，<br /><span>同一条好习惯。</span></h2>
+            </div>
+            <p>先确认线路状态，再开始重要对话。把等待和重试，留给真正需要它们的地方。</p>
+          </div>
+
+          <div class="model-switcher" role="tablist" aria-label="模型使用场景">
+            <button class="model-tab is-active" type="button" role="tab" aria-selected="true" data-model="chat">对话模型</button>
+            <button class="model-tab" type="button" role="tab" aria-selected="false" data-model="code">代码助手</button>
+            <button class="model-tab" type="button" role="tab" aria-selected="false" data-model="research">研究检索</button>
+          </div>
+
+          <div class="model-panel">
+            <div class="model-copy">
+              <p class="model-label" data-model-label>CHAT / CONVERSATION</p>
+              <h3 data-model-title>让长对话保持在状态里。</h3>
+              <p data-model-description>写作、整理、头脑风暴，模型应该像一张随时能回来的桌子，而不是一次次重新排队。</p>
+              <ul class="model-points" data-model-points>
+                <li><span class="check">✓</span>适合连续多轮的日常对话</li>
+                <li><span class="check">✓</span>开聊前可快速确认线路状态</li>
+                <li><span class="check">✓</span>切换设备时保持同一套使用习惯</li>
+              </ul>
+              <a class="text-link" href="https://xn--9kqs1lo79d.com/#/register?code=re7tYxnS" target="_blank" rel="sponsored noopener noreferrer">查看适合你的方案 <span>↗</span></a>
+            </div>
+            <div class="prompt-window" aria-live="polite">
+              <div class="prompt-topbar"><span class="window-dots"><i></i><i></i><i></i></span><span data-window-name>clean-route / chat</span><span class="window-live">● live</span></div>
+              <div class="prompt-content">
+                <div class="prompt-line prompt-muted">route-check <span>--before-prompt</span></div>
+                <div class="prompt-line prompt-result"><span class="prompt-ok">OK</span> line: <strong>Tokyo / 86ms</strong></div>
+                <div class="prompt-divider"></div>
+                <div class="prompt-line prompt-user"><span>你</span>帮我把这段想法整理成一个清晰的框架</div>
+                <div class="prompt-line prompt-ai"><span>模型</span><span class="typing"><b></b><b></b><b></b></span>正在组织内容<span class="caret"></span></div>
+              </div>
+              <div class="prompt-footer"><span>context / ready</span><span>▣ 2.4k tokens</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps shell" aria-labelledby="steps-title">
+        <div class="steps-heading">
+          <p class="section-index">03 / START IN MINUTES</p>
+          <h2 id="steps-title">三步，开始下一次<br /><span>更顺的连接。</span></h2>
+        </div>
+        <div class="step-grid">
+          <article class="step-item">
+            <div class="step-top"><span>01</span><span class="step-line"></span></div>
+            <h3>看清楚</h3>
+            <p>打开注册页，先看当前套餐、支持设备和线路说明。</p>
+          </article>
+          <article class="step-item">
+            <div class="step-top"><span>02</span><span class="step-line"></span></div>
+            <h3>选合适</h3>
+            <p>按自己的对话频率和设备数量选择，不为用不到的配置买单。</p>
+          </article>
+          <article class="step-item">
+            <div class="step-top"><span>03</span><span class="step-line"></span></div>
+            <h3>开模型</h3>
+            <p>连接完成后先做一次线路检查，再开始你的工作流。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="plans" id="plans" aria-labelledby="plans-title">
+        <div class="shell plans-inner">
+          <div class="plans-heading">
+            <p class="section-index">04 / PLANS</p>
+            <h2 id="plans-title">先用起来，<br /><span>再决定长期。</span></h2>
+            <p>套餐和优惠会随注册页实时更新。我们把选择留给你，把信息写清楚。</p>
+          </div>
+          <div class="plan-list">
+            <article class="plan-row plan-featured">
+              <div class="plan-name"><span class="plan-mark">A</span><div><h3>轻量开始</h3><p>适合偶尔对话、短时检索</p></div></div>
+              <div class="plan-detail"><span>从低门槛方案开始</span><strong>实时价格</strong></div>
+              <a class="button button-light" href="https://xn--9kqs1lo79d.com/#/register?code=re7tYxnS" target="_blank" rel="sponsored noopener noreferrer">去注册页 <span>↗</span></a>
+            </article>
+            <article class="plan-row">
+              <div class="plan-name"><span class="plan-mark plan-mark-alt">B</span><div><h3>高频工作</h3><p>适合日常模型、代码助手</p></div></div>
+              <div class="plan-detail"><span>按月 / 按年可选</span><strong>实时价格</strong></div>
+              <a class="button button-outline-light" href="https://xn--9kqs1lo79d.com/#/register?code=re7tYxnS" target="_blank" rel="sponsored noopener noreferrer">查看方案 <span>↗</span></a>
+            </article>
+          </div>
+          <p class="plan-note"><span>i</span> 实际价格、流量、设备数与可用线路以注册页及服务商最新说明为准。</p>
+        </div>
+      </section>
+
+      <section class="faq shell" id="faq" aria-labelledby="faq-title">
+        <div class="faq-heading">
+          <p class="section-index">05 / FAQ</p>
+          <h2 id="faq-title">先把你会问的，<br /><span>说清楚。</span></h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>它适合哪些模型场景？<span class="faq-icon">+</span></summary>
+            <p>更适合需要稳定打开网页服务的日常场景，例如对话模型、代码助手、资料检索和轻量协作。具体可用性会受到地区、服务商政策和模型平台状态影响。</p>
+          </details>
+          <details>
+            <summary>“干净”具体指什么？<span class="faq-icon">+</span></summary>
+            <p>这里的“干净”是使用取向，不是绝对承诺：页面优先呈现线路状态、更新时间和使用说明，减少广告式干扰。实际网络质量请以你所在地区的连接结果为准。</p>
+          </details>
+          <details>
+            <summary>注册前需要注意什么？<span class="faq-icon">+</span></summary>
+            <p>请先阅读注册页的套餐、退款、隐私和服务条款，确认支持的设备与地区，再决定是否购买。不要将账号或配置分享给不信任的人。</p>
+          </details>
+          <details>
+            <summary>这个链接为什么带有 code？<span class="faq-icon">+</span></summary>
+            <p>这是推广链接。通过它注册可能为页面维护者带来佣金，价格以注册页实时显示为准，不因为推广标记而额外加价。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="final-cta shell" aria-labelledby="cta-title">
+        <div class="cta-rule"></div>
+        <div class="cta-copy">
+          <p class="section-index">READY WHEN YOU ARE</p>
+          <h2 id="cta-title">把下一次对话，<br /><span>交给更顺的线路。</span></h2>
+        </div>
+        <div class="cta-action">
+          <p>先看当前套餐和服务说明，再决定是否开始。</p>
+          <a class="button button-primary button-large" href="https://xn--9kqs1lo79d.com/#/register?code=re7tYxnS" target="_blank" rel="sponsored noopener noreferrer">打开注册页 <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 22.4 12.5 8l4.4 9.4L21 8l4 14.4" /><path class="brand-dot" d="M6.5 23.2h19" /></svg></span><span>清线 / CLEAN ROUTE</span></div>
+        <p>推广页面 · 价格与服务以注册页最新说明为准</p>
+        <a href="#top" class="back-top" aria-label="回到顶部">回到顶部 <span>↑</span></a>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
